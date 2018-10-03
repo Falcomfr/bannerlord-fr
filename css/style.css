@@ -1,0 +1,358 @@
+body {
+    margin: 0 auto  0 auto;
+    width:100%;
+	background: url('../img/7.png') repeat;
+    font-family: Georgia;
+}
+
+a:link, a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+#chargement {
+	display:none;
+}
+
+.black {
+	color: #000000;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.floatClear {
+    float:none;
+    clear:both;
+}
+
+.floatl {
+    float:left;
+}
+/***********************************/
+/**************** TOP **************/
+/***********************************/
+
+/**************** MENU **************/
+
+.menu{
+    margin: 0 auto;
+    height: 42px;
+    width: 970px;
+    
+}
+
+.menu img{
+    float: left;
+    display: block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.menu a{
+    display: block;
+	float: left;
+    margin-left: 18px;
+    padding-bottom: 44px;
+    background-repeat: no-repeat;
+    margin-top: 4px;
+}
+
+.link {
+    height: 34px;
+}
+
+a.actu {
+	background-image: url("../img/menu/actu.png");
+	width: 138px;
+    margin-left: 7px;;
+}
+
+a.actu:hover {
+	background-image: url("../img/menu/actuhover.png");
+}
+
+a.univers {
+    background-image: url("../img/menu/univers.png");
+	width: 195px;
+    margin-left: 21px;
+}
+
+a.univers:hover {
+	background-image: url("../img/menu/univershover.png");
+}
+
+a.logo {
+	background-image: url("../img/menu/logo.png");
+	width: 195px;
+	height: 152px;
+	display: block;
+    position: absolute;
+    margin-top:0;
+    margin-left: 387.5px; 
+    padding:0px;
+    z-index: 1;
+}
+
+a.clans {
+    background-image: url("../img/menu/listeclan.png");
+	width: 204px;
+    margin-left: 183px;
+}
+
+a.clans:hover {
+	background-image: url("../img/menu/listeclanhover.png");
+}
+
+a.forum {
+    background-image: url("../img/menu/forum.png");
+	width: 125px;
+    margin-left: 22px;
+}
+
+a.forum:hover {
+	background-image: url("../img/menu/forumhover.png");
+}
+
+
+/* Code for old Chrome, Safari and Opera */
+@-webkit-keyframes mymove {
+    from {background-position: 0px -169px;height:0px;}
+    to {background-position: 0px 0px;height:169px;}
+}
+/* Standard syntax */
+@keyframes mymove {
+    from {background-position: 0px -169px;height:0px;}
+    to {background-position: 0px 0px;height:169px;}
+}
+
+@keyframes mymy {
+    from {opacity:0;}
+    to{opacity:1;}
+}
+
+.menuBan {
+    display:none;
+    position:fixed;
+    margin-top: 82px;
+    height: 169px;
+	width: 150px;
+    -webkit-animation: mymove 1s 1; /* Chrome, Safari, Opera */
+    animation: mymove 1s 1;
+}
+
+.menuBan a{
+    -webkit-animation: mymy 1.5s 1; /* Chrome, Safari, Opera */
+    animation: mymy 1.5s 1;
+}
+
+.menubot {
+    width: 150px;
+    height:67px;
+    float: bottom;
+    position:absolute;
+    bottom:0;
+    margin-bottom:-67px;
+}
+
+#menubotl{
+    background-image: url("../img/menu/menud1bot.png");
+}
+
+#menubotf{
+    background-image: url("../img/menu/menud3bot.png");
+}
+
+#menuActu {
+    margin-left: 2px;
+    background-image: url("../img/menu/menud1.png");
+     background-repeat: no-repeat;
+    z-index: 1;
+}
+
+#menuUnivers {
+    margin-left: 222px;
+    background-image: url("../img/menu/menud1.png");
+    z-index: 1;
+}
+#menuUnivers a{
+    font-size: 18px;
+    white-space:nowrap;
+}
+
+#menuLogo {
+    position: absolute;
+    margin-left: 401px;
+    background-image: url("../img/menu/menud3.png");
+    z-index: 0;
+}
+
+.menulabel:hover #menuActu {
+    display:block;
+}
+
+.menulabel1:hover #menuUnivers{
+    display:block;
+}
+
+.menulabel2:hover #menuLogo{
+    display:block;
+}
+
+.menulabel:hover .menuLabel {
+    display:none;
+}
+
+.menulabel1:hover .menuLabel1 {
+    display:none;
+}
+
+.menulabel2:hover .menuLabel2 {
+    display:none;
+}
+
+.menuLink a{
+    font-size: 20px;
+    padding: 0px;
+    width: 116px;
+    text-align: center;
+    text-shadow: #42110a 1px 1px, #42110a -1px 1px, #42110a -1px -1px, #42110a 1px -1px;
+    color: #e1d2b8;
+}
+.menuLink a:hover{
+    color: #e8b646;
+}
+
+a.banActu {
+    margin-top: 13px;
+}
+
+#banHis {
+    margin-top: 20px;
+    
+}
+
+#banEquip{
+    margin-top: 72px;
+}
+
+/**************** BANNIERE **************/
+
+.banner-bandeau {
+    background: url('../img/bandeau.png') repeat-x;
+    height: 40px;
+}
+
+.banner-mid {
+    background: url('../img/bandeauok.png') no-repeat;
+    height: 100px;
+    background-position: top center;
+    resize:vertical;
+    overflow-x: hidden;
+    max-height: 262px;
+    min-height: 100px;
+}
+
+/**************** LOGO & INFO **************/
+
+.banner-bot-info {
+    margin: 0 auto;
+    height: 80px;
+    width: 800px;
+    margin-top: -61px;
+    white-space:nowrap;
+}
+
+
+#steam {
+    min-width: 220px;
+    float: left;
+}
+
+#bordersteam {
+    background: url('../img/menu/bordure-steam-gauche.png') no-repeat;
+    height: 80px;
+    width: 8px;
+    float:left;
+}
+bordersteamM {
+    background: url('../img/menu/bordure-steam-droite.png') no-repeat;
+    height: 80px;
+    width: 8px;
+
+}
+#bordersteamr {
+    background: url('../img/menu/bordure-steam-droite.png') no-repeat;
+    height: 80px;
+    width: 8px;
+    float: right;
+
+}
+
+#infosteam {
+    display:block;
+    height: 40px;
+    padding:12px 83px 12px 12px;
+    overflow:hidden;
+    background-color: rgba(225, 225, 225, 0.8);
+    text-shadow: #42110a 1px 1px, #42110a -1px 1px, #42110a -1px -1px, #42110a 1px -1px;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+#imgsteam{
+   float:left;
+}
+
+#border-h {
+    height: 8px;
+    width: 100%;
+    background: url('../img/menu/bordure-steam.png') repeat-x;
+}
+
+#boubou {
+    float: right;
+}
+
+.banniereAll {
+    float: left;
+    width: 60px;
+	height: 71px; 
+    margin: 8px 10px 0 10px;
+}
+
+#dons{
+	width: 87px;
+	height: 90px;
+}
+
+#yt {
+	background-image: url("../img/menu/youtube.png");
+}
+
+#ts {
+	background-image: url("../img/menu/ts.png");
+}
+#steamB {
+	background-image: url("../img/menu/steam.png");
+}
+#face {
+	background-image: url("../img/menu/facebook.png");
+}
+
+/***********************************/
+/**************** Centre **************/
+/***********************************/
+
+.contenu {
+	margin: 0px auto;
+    padding: 8px;
+	width:950px;
+}
+
+/***********************************/
+/**************** Bottom **************/
+/***********************************/
+

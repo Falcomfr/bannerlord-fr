@@ -1,0 +1,208 @@
+/* For Posts List by CodexWorld */
+.posts_list{ 
+    width: 1100px;
+}
+div.list_item {
+float: left;
+width: 290px;
+height:390px;
+background: url('../img/7.png') repeat;
+position:relative;
+border: 1px solid #968976;
+}
+
+div.list_item {
+margin: 9px 15px 9px;
+-moz-border-radius: 4px;
+-khtml-border-radius: 4px;
+-webkit-border-radius: 4px;
+}
+div.list_item p {
+margin: .5em 0;
+padding: 2px;
+font-size: 13px;
+line-height: 1.5;
+}
+.list_item a {
+text-decoration: none;
+color: #444;
+
+}
+.list_item:hover a.lireSuite{ 
+    text-decoration: underline;
+}
+h2 {
+    font-size: 19px;
+    margin: 6px 8px 0 8px;
+}
+
+h3 {
+    font-size: 14px;
+    margin: 2px 8px 0 8px;
+    color:#6a6a6a;
+    font-weight: normal;
+}
+
+
+/* For Loading Overlay by CodexWorld */
+.post-wrapper{position: relative;}
+.loading-overlay{display: none;position: absolute;left: 0; top: 0; right: 0; bottom: 0;z-index: 2;background: rgba(222,204,175,0.7);}
+.overlay-content {
+    position: absolute;
+    transform: translateY(-50%);
+     -webkit-transform: translateY(-50%);
+     -ms-transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #555;
+}
+/* For Pagination Links by CodexWorld */
+div.pagination {
+	padding:5px;
+	margin:4px;
+}
+
+div.pagination a {
+	margin: 1.5px;
+	padding: 0.4em 0.54em 0.33em 0.54em;
+	background-color: #b8a68b;
+	text-decoration: none;
+	color: #fff;
+}
+div.pagination a:hover, div.pagination a:active {
+	padding: 0.4em 0.54em 0.33em 0.54em;
+	margin: 1.5px;
+	background-color: #9e8e77;
+	color: #fff;
+}
+div.pagination span.current {
+    padding: 0.5em 0.64em 0.43em 0.64em;
+    margin: 2px;
+    background-color: #f6efcc;
+    color: #6d643c;
+}
+div.pagination span.disabled {
+    display:none;
+}
+
+.post-search-panel{
+    margin-bottom: 10px;
+}
+
+/***** Affichage ******/
+
+.actuImgCont {
+    overflow:hidden;
+    max-width: 320px;
+    height: 180px;
+    position:relative;
+}
+
+.actuImgCont img{
+    transition: all 1s;
+    max-width: 360px;
+    top:-100%; left:0; right: 0; bottom:-100%;
+    margin: auto;
+    position:absolute;
+}
+
+.list_item:hover .bplay {
+    opacity: 1;
+}
+
+
+.bplay {
+    top:50px;
+    left:90px;
+    opacity: 0.7;
+}
+
+.list_item:hover .actuImg {
+    transform: scale(1.1);
+    filter: brightness(45%);
+}
+
+.myBtn00 {
+    background-image: url("../img/actu/oeil.png");
+    background-size: 90%;
+    background-position:center;
+    background-color: #e5cfae;
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 34px;
+    margin: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #444444;
+    float:right;
+}
+
+.myBtn00:hover {
+    color:#303030;
+    background-image: url("../img/actu/oeilhov.png");
+    border: 2px solid #202020;
+}
+
+a.lireSuite {
+    float:left;
+    color:#792525;
+    font-size: 14px;
+    margin: 24px 0 0 5px;
+}
+
+a.lireSuite:hover {
+    text-decoration: underline;
+}
+
+
+/**** Affiche actu ****/
+
+.imgAffich {
+    background-position: center 35%;
+    border: 2px solid #978b76;
+    max-width: 960px;
+    height: 140px;
+    margin-bottom: 10px;
+}
+
+
+/**** shadow box *****/
+ /* The Modal (background) */
+.modalcss {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background: url('../img/7.png') repeat;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.closecss {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closecss:hover,
+.closecss:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+} 
